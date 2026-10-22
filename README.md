@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Practice
 
-## Getting Started
+## 1. Жоба туралы
 
-First, run the development server:
+Бұл жоба Next.js фреймворкі арқылы құрылды. Next.js React негізінде веб-қосымшалар жасауға арналған.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 2. Қолданылған командалар
+
+| Команда | Қызметі |
+|---|---|
+| `node -v` | Node.js нұсқасын көрсетеді |
+| `npm.cmd -v` | npm нұсқасын көрсетеді |
+| `npx.cmd create-next-app@latest nextjs-practice` | Жаңа Next.js жобасын құрады |
+| `cd nextjs-practice` | Жоба бумасына өтеді |
+| `npm.cmd run dev` | Жобаны әзірлеу режимінде іске қосады |
+| `npm.cmd run build` | Жобаның production нұсқасын құрастырады |
+| `npm.cmd run start` | Құрастырылған жобаны іске қосады |
+| `git add .` | Файлдарды commit жасауға дайындайды |
+| `git commit -m "Add project documentation"` | Өзгерістерді Git тарихында сақтайды |
+| `git push` | Өзгерістерді GitHub-қа жібереді |
+
+## 3. Жоба құрылымы
+
+```text
+nextjs-practice/
+├── app/
+│   ├── favicon.ico
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── public/
+├── eslint.config.mjs
+├── next.config.ts
+├── package.json
+├── package-lock.json
+├── postcss.config.mjs
+├── tsconfig.json
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 4. Файлдар мен бумалардың қызметі
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `app/` — веб-қосымшаның беттері мен құрылымы.
+- `app/page.tsx` — басты беттің коды.
+- `app/layout.tsx` — беттердің ортақ құрылымы.
+- `app/globals.css` — жалпы стильдер.
+- `public/` — суреттер және статикалық файлдар.
+- `package.json` — жобаның тәуелділіктері мен командалары.
+- `package-lock.json` — npm пакеттерінің нақты нұсқаларын бекітеді.
+- `next.config.ts` — Next.js баптаулары.
+- `tsconfig.json` — TypeScript баптаулары.
+- `README.md` — жоба туралы ақпарат пен нұсқаулық.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 5. Жобаны іске қосу
 
-## Learn More
+PowerShell терминалында:
 
-To learn more about Next.js, take a look at the following resources:
+```powershell
+npm.cmd run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Браузерде http://localhost:3000 мекенжайын ашыңыз.
