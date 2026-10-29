@@ -31,17 +31,22 @@ export default function Home() {
             </span>
           </a>
 
-          <div className="hidden items-center gap-7 text-sm font-semibold text-slate-600 md:flex">
-            <a href="#about" className="hover:text-blue-600">
-              Қызмет туралы
-            </a>
-            <a href="#advantages" className="hover:text-blue-600">
-              Артықшылықтар
-            </a>
-            <a href="/dashboard" className="hover:text-blue-600">
-              Дрондар картасы
-            </a>
-          </div>
+          
+<div className="hidden items-center gap-7 text-sm font-semibold text-slate-600 md:flex">
+  <a href="#about" className="hover:text-blue-600">
+    Қызмет туралы
+  </a>
+  <a href="#advantages" className="hover:text-blue-600">
+    Артықшылықтар
+  </a>
+  <a href="/dashboard" className="hover:text-blue-600">
+    Дрондар картасы
+  </a>
+  <a href="/orders" className="hover:text-blue-600">
+    Менің тапсырыстарым
+  </a>
+</div>
+
 
           <a
             href="/delivery"
