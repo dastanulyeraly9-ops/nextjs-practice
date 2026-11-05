@@ -36,21 +36,23 @@ html[data-theme="light"] {
 }
 
 html[data-theme="light"] body {
-  background: #f3f6fb;
-  color: #172033;
+  background: var(--background);
+  color: var(--foreground);
 }
 
-/* Dark UI backgrounds -> light */
-html[data-theme="light"] [class~="bg-[#080d18]"] {
+/* Admin және басқа беттердің фон түстері */
+html[data-theme="light"] [class~="bg-[#080d18]"],
+html[data-theme="light"] [class~="bg-[#080d19]"] {
   background-color: #f3f6fb !important;
 }
 
+html[data-theme="light"] [class~="bg-[#101827]"],
 html[data-theme="light"] [class~="bg-[#111a2b]"],
 html[data-theme="light"] [class~="bg-[#0d1525]"] {
   background-color: #ffffff !important;
 }
 
-/* Text colors */
+/* Мәтін түстері */
 html[data-theme="light"] [class~="text-white"] {
   color: #172033 !important;
 }
@@ -65,13 +67,23 @@ html[data-theme="light"] [class~="text-slate-600"] {
   color: #718096 !important;
 }
 
-/* Borders */
+/* Батырмалардағы ақ мәтінді сақтау */
+html[data-theme="light"] button[class~="text-white"],
+html[data-theme="light"] a[class~="text-white"] {
+  color: #ffffff !important;
+}
+
+/* Шекаралар */
 html[data-theme="light"] [class~="border-slate-800"],
 html[data-theme="light"] [class~="border-slate-700"] {
   border-color: #dce3ed !important;
 }
 
-/* Existing light pages -> dark */
+html[data-theme="light"] [class~="border-white/10"] {
+  border-color: #dce3ed !important;
+}
+
+/* DARK MODE */
 html[data-theme="dark"] [class~="bg-white"] {
   background-color: #111a2b !important;
 }
@@ -96,4 +108,25 @@ html[data-theme="dark"] [class~="text-gray-500"] {
 html[data-theme="dark"] [class~="border-gray-200"],
 html[data-theme="dark"] [class~="border-slate-200"] {
   border-color: #293548 !important;
+}
+
+
+/* LIGHT MODE - ADMIN CARDS */
+html[data-theme="light"] [class~="bg-[#111c2d]"] {
+  background-color: #ffffff !important;
+}
+
+html[data-theme="light"] [class~="bg-[#111827]"],
+html[data-theme="light"] [class~="bg-[#101827]"] {
+  background-color: #ffffff !important;
+}
+
+html[data-theme="light"] [class~="border-white/5"],
+html[data-theme="light"] [class~="border-white/10"] {
+  border-color: #dce3ed !important;
+}
+
+/* DARK MODE - ADMIN CARDS */
+html[data-theme="dark"] [class~="bg-[#111c2d]"] {
+  background-color: #111c2d !important;
 }
