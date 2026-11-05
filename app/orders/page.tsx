@@ -236,7 +236,7 @@ export default function OrdersPage() {
                     <span className={`rounded-full px-3 py-1.5 text-sm font-semibold ${statusStyles[order.status]}`}>
                       {order.status}
                     </span>
-                    <p className="font-bold">{order.price.toLocaleString("kk-KZ")} ₸</p>
+                    <p className="font-bold">{order.price} ₸</p>
                   </div>
                 </div>
 
